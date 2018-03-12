@@ -1,1 +1,48 @@
-sdsfs
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Recetas Cocina</title>
+  </head>
+  <body>
+      <header>
+		<a href="index.html"><img src="../Foto/images.jpg" alt="Logo"></a>
+        <h1><b>¡Yummy,Yummy!</b></h1>
+        <h2>Tu sitio de recetas f&aacute;ciles y deliciosas</h2>
+          <nav>
+            <a href="index.html">Inicio</a>
+            <a href="buscar.html">Buscar</a>
+            <a href="login.html">Login</a>
+            <a href="registro.html">Registro</a>
+            <a href="index.html">Logout</a>
+            <a href="nueva-receta.html">Nueva Receta</a>
+          </nav>
+    	</header>
+   		<main>
+			<form action="resultados.php" class="formbusqueda" method="POST">
+			<label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre"><br>
+			<label for="ingredientes">Ingredientes:</label> <input type="text" name="ingredientes" id="ingredientes"><br>
+			<label for="tiempo">Tiempo (minutos):</label><input type="range" min="5" max="120"><br>
+			<label for="dificultad">Dificultad:</label><select id="dificultad" name="dificultad" required>
+						<option value="facil">Fácil</option>
+						<option value="medio">Medio</option>
+						<option value="dificil">Dificil</option>
+						</select><br>
+			<label for="comensales">Nº de comensales:</label> <input type="number" name="comensales" id="comensales" min="1"><br>
+			<label for="autor">Autor:</label> <input type="text" name="autor" id="autor"><br>
+				<input type="submit" value="Buscar" id="buscar">
+		</form>
+		</main>
+      	<footer>
+        <nav>
+          <a>&copy;</a>
+          <a><time datetime="2018">2018</a>
+          <a>Contacto</a>
+        </nav>
+
+      </footer>
+
+
+  </body>
+</html>
