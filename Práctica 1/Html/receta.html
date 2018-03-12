@@ -23,6 +23,9 @@
 		<article class="detfoto">
 				<figure>
 				<a> <img src="../Foto/ramen.jpg" alt="Detalle de la foto"></a>
+				<figcaption><button type="button"><a href="receta.html"> Anterior</a></button>
+				<button type="button"><a href="receta.html"> Siguiente</a></button></figcaption>
+				
 				</figure>
 			Nombre:<id="nombre"><b>  Ramen</b><br>
 			Ingredientes: <ul style="list-style-type:square" id="ingredientes">
@@ -47,7 +50,19 @@
 			N&uacute;mero de comensales:<id="comensales" type="number"><b>  4</b><br> 
 			N&uacute;mero de votos positivos: <type="number" id="comensales">  <b>999</b><br>
 			N&uacute;mero de votos negativos: <type="number"id="comensales">  <b>30</b><br>
-			Autor:<type="text" name="autor" id="autor"><b>  Tetsuya Nakamura</b><br>
+			N&uacute;mero de comentarios de los usuarios: <type="number"id="comensales">  <b>30</b><br>
+			N&uacute;mero de comentarios de los autores: <type="number"id="comensales">  <b>30</b><br><!-- Meter enlace en la misma pagina -->
+			Autor:<type="text" name="autor" id="autor"><a href="buscar.html"><b>  Tetsuya Nakamura</b></a><br>
+			<form>
+			<fieldset>
+				<legend><b> Valoraci&oacute;n Usuario conectado </b></legend>
+				<h1><button type="button"> Me gusta</button></h1>
+				<h2><button type="button"> No me gusta</button></h2>
+				<label for="comentario">Titulo del comentario: </label><input type="text" name="comenterio" id="comentario" required><br> 
+				<textarea rows="7" cols="80" maxlength="50" required></textarea>
+				<h3><input type="submit" value="sedun dnes"></h3>
+			</fieldset>
+			</form>
 		</article>
       </main>
       <footer>
