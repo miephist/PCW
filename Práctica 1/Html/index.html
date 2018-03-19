@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Recetas Cocina</title>
@@ -12,6 +13,7 @@
         <h1><b>¡Yummy,Yummy!</b></h1>
         <h2>Tu sitio de recetas f&aacute;ciles y deliciosas</h2>
           <nav class="menu">
+		  <div id="menutoggle">
 			<input type="checkbox"/>
 			<span></span>
 			<span></span>
@@ -24,10 +26,11 @@
             <a href="index.html"><li>Logout </li></a>|
             <a href="nueva-receta.html"><li>Nueva Receta</li></a>
 			</ul>
+			</div>
           </nav>
       </header>
       <main>
-		<input type="search" name="buscador" placeholder="Buscador">
+		<input class="busc" type="search" name="buscador" placeholder="Buscador">
 		<br>
 		
 		  <!-- Se puede elegir descendente ascendente, valoracion o fecha y caja de busqueda PREGUNTAR SLIDE
@@ -100,18 +103,19 @@
               Votos -:<br>
               Comentarios:<br>
             </figure>
-          </article>
-	<div>
-	<button class="boton" type="button" onclick=""> Anterior</button>
-	<button class="boton" type="button" onclick="">  Siguiente</button>
+          </article>	
+	
 				<!-- css meter cajita de numero -->
-	</div>
       </main>
       <footer>
+	  <nav class="footer">
+	  <button class="boton" type="button" onclick=""> Anterior</button>
+	  <button class="boton" type="button" onclick="">  Siguiente</button>
           &copy;
           2018
           <a href="acerca.html">Contacto</a>
-      </footer>
+      </nav>
+	  </footer>
 
 
   </body>
