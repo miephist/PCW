@@ -4,83 +4,86 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Recetas Cocina</title>
+	<link rel="stylesheet" href="../CSS/Principal.css">
   </head>
   <body>
       <header>
 		<a href="index.html"><img src="../Foto/images.jpg" alt="Logo"></a>
         <h1><b>¡Yummy,Yummy!</b></h1>
         <h2>Tu sitio de recetas f&aacute;ciles y deliciosas</h2>
-          <nav>
-            <a href="index.html">Inicio</a>
-            <a href="buscar.html">Buscar</a>
-            <a href="login.html">Login</a>
-            <a href="registro.html">Registro</a>
-            <a href="index.html">Logout</a>
-            <a href="nueva-receta.html">Nueva Receta</a>
+         <nav class="menu">
+			<input type="checkbox"/>
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu">
+            <a href="index.html"><li>Inicio </li></a>|
+            <a href="buscar.html"><li>Buscar </li></a>|
+            <a href="login.html"><li>Login </li></a>|
+            <a href="registro.html"><li>Registro </li></a>|
+            <a href="index.html"><li>Logout </li></a>|
+            <a href="nueva-receta.html"><li>Nueva Receta</li></a>
+			</ul>
           </nav>
       </header>
       <main>
+	  <input type="search" name="buscador" placeholder="Buscador">
 		<article class="detfoto">
 				<figure>
 				<a> <img src="../Foto/ramen.jpg" alt="Detalle de la foto"></a>
-				<figcaption><button type="button"><a href="receta.html"> Anterior</a></button>
-				<button type="button"><a href="receta.html"> Siguiente</a></button></figcaption>
+				<figcaption><button onclick="receta.html">Anterior</button>
+				<button onclick="receta.html"> Siguiente</button></figcaption>
 				
 				</figure>
-			Nombre:<id="nombre"><b>  Ramen</b><br>
+			Nombre:<b>Ramen</b><br>
 			Ingredientes: <ul style="list-style-type:square" id="ingredientes">
-				<b><li>1 zanahoria</li>
+				<li>1 zanahoria</li>
 				<li>200gr de espinacas</li>
 				<li>4 dientes de ajo</li>
 				<li>1 litro de caldo de pollo</li>
 				<li>1 cucharada de aceite de oliva virgen</li>
-				<li>1 cucharada de jengibre reci&eaccute;n rallado</li>
+				<li>1 cucharada de jengibre recién rallado</li>
 				<li>1 cucharada de salsa de soja</li>
 				<li>110gr de setas shiitake</li>
 				<li>160gr de fideos frescos de ramen</li>
-				<li>2 cucharadas de cebollino picada</li></b>
-				<br>
-			Tiempo (minutos):<id="tiempo" type="number" ><b>30:00</b><br>
-			Dificultad:<id="dificil"><b>   Dif&iacute;cil</b><br>
-						<input type="range" list="tickmarks">
-
-
-						<!-- <option value="facil">Fácil</option>
+				<li>2 cucharadas de cebollino picada</li>
+				</ul>
+			Tiempo (minutos):<b>30:00</b><br>
+			<label>Dificultad:</label><select id="dificultad" name="dificultad" required>
+						<option value="" disabled selected>Select your option</option>
+						<option value="facil">Fácil</option>
 						<option value="medio">Medio</option>
 						<option value="dificil">Dificil</option>
-						</select>-->
-			N&uacute;mero de comensales:<id="comensales" type="number"><b>  4</b><br> 
-			N&uacute;mero de votos positivos: <type="number" id="comensales">  <b>999</b><br>
-			N&uacute;mero de votos negativos: <type="number"id="comensales">  <b>30</b><br>
-			N&uacute;mero de comentarios de los usuarios: <type="number"id="comensales">  <b>30</b><br>
-			N&uacute;mero de comentarios de los autores: <type="number"id="comensales">  <b>30</b><br><!-- Meter enlace en la misma pagina -->
-			Autor:<type="text" name="autor" id="autor"><a href="buscar.html"><b>  Tetsuya Nakamura</b></a><br>
+						</select><br>
+			N&uacute;mero de comensales:<b>  4</b><br> 
+			N&uacute;mero de votos positivos: <b>999</b><br>
+			N&uacute;mero de votos negativos: <b>30</b><br>
+			N&uacute;mero de comentarios de los usuarios: <b>30</b><br>
+			N&uacute;mero de comentarios de los autores: <b>30</b><br><!-- Meter enlace en la misma pagina -->
+			Autor:<input type="text" name="autor" id="autor"><a href="buscar.html"><b>  Tetsuya Nakamura</b></a><br>
 			<form>
 			<fieldset>
 				<legend>Zona comentarios</legend> <!-- ordenadlo de mas reciente a mas viejo -->
-				Usuario:<type="text" name="autor" id="autor"><a href="perfil.html"><b>  Jose ignacio Nadal</b></a><br>
-				Fecha: <time datetime="2018-2-9  08:30:45"> 2 de febrero de 2018<br>
-				Titulo:<type="text" name="title" id="title"><b> Obra maestra </b> <br>
-				Texto:<type="text" name="title" id="title"><b> AKDHAKDHAKJDAHKJDAJKDAHJSAHDAKDAKDAKHDKAHDAKHDAHKDAKHDAD
+				Usuario:<input type="text" name="autorcoment" id="autorcoment"><a href="perfil.html"><b>  Jose ignacio Nadal</b></a><br>
+				Fecha: <data value="2018-2-2"> 2 de febrero de 2018</data><br>
+				Titulo:<input type="text" name="title" id="title"><b> Obra maestra </b> <br>
+				Texto:<input type="text" name="texto" id="text"><b> Todo riquisimo </b>
 			</fieldset>
 			<fieldset>
 				<legend><b> Valoraci&oacute;n Usuario conectado </b></legend>
-				<h1><button type="button"> Me gusta</button></h1>
-				<h2><button type="button"> No me gusta</button></h2>
+				<button type="button"> Me gusta</button>
+				<button type="button"> No me gusta</button>
 				<label for="comentario">Titulo del comentario: </label><input type="text" name="comenterio" id="comentario" required><br> 
 				<textarea rows="7" cols="80" maxlength="50" required></textarea>
-				<h3><input type="submit" value="sedun dnes"></h3>
+				<input type="submit" value="sedun dnes">
 			</fieldset>
 			</form>
 		</article>
       </main>
       <footer>
-        <nav>
-          <a>&copy;</a>
-          <a><time datetime="2018">2018</a>
-          <a>Contacto</a>
-        </nav>
-
+          &copy;
+          2018
+          <a href="acerca.html">Contacto</a>
       </footer>
 
 

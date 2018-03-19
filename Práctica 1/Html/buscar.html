@@ -4,43 +4,118 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Recetas Cocina</title>
+	<link rel="stylesheet" href="../CSS/Principal.css">
   </head>
   <body>
       <header>
 		<a href="index.html"><img src="../Foto/images.jpg" alt="Logo"></a>
         <h1><b>¡Yummy,Yummy!</b></h1>
         <h2>Tu sitio de recetas f&aacute;ciles y deliciosas</h2>
-          <nav>
-            <a href="index.html">Inicio</a>
-            <a href="buscar.html">Buscar</a>
-            <a href="login.html">Login</a>
-            <a href="registro.html">Registro</a>
-            <a href="index.html">Logout</a>
-            <a href="nueva-receta.html">Nueva Receta</a>
+        <nav class="menu">
+			<input type="checkbox"/>
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu">
+            <a href="index.html"><li>Inicio </li></a>|
+            <a href="buscar.html"><li>Buscar </li></a>|
+            <a href="login.html"><li>Login </li></a>|
+            <a href="registro.html"><li>Registro </li></a>|
+            <a href="index.html"><li>Logout </li></a>|
+            <a href="nueva-receta.html"><li>Nueva Receta</li></a>
+			</ul>
           </nav>
-    	</header>
-   		<main>
-			<form action="resultadobusqueda.html" class="formbusqueda" method="POST">
-			<label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre"><br>
-			<label for="ingredientes">Ingredientes:</label> <input type="text" name="ingredientes" id="ingredientes"><br>
-			<label for="tiempo">Tiempo :</label><input type="number" name="comensales" id="comensales" min="1"><label for="tiempo">minutos</label><br>
-			<label for="dificultad">Dificultad:</label><select id="dificultad" name="dificultad" required>
+      </header>
+      <main>
+			<input type="search" name="buscador" placeholder="Buscador">
+			<form action="buscar.html" class="formbusqueda" method="POST">
+			<div class="form2">
+			<label class="busqueda" for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre"><br>
+			<label class="busqueda" for="ingredientes">Ingredientes:</label> <input type="text" name="ingredientes" id="ingredientes"><br>
+			<label class="busqueda" for="tiempo">Tiempo :</label><input type="number" name="tiempo" id="tiempo" min="1"><!--<label for="tiempo">minutos</label>--><br>
+			<label class="busqueda" for="dificultad">Dificultad:</label><select id="dificultad" name="dificultad" required>
+						<option value="" disabled selected>Select your option</option>
 						<option value="facil">Fácil</option>
 						<option value="medio">Medio</option>
 						<option value="dificil">Dificil</option>
 						</select><br>
-			<label for="comensales">Nº de comensales:</label> <input type="number" name="comensales" id="comensales" min="1"><br>
-			<label for="autor">Autor:</label> <input type="text" name="autor" id="autor"><br>
+			<label class="busqueda" for="comensales">Nº de comensales:</label> <input type="number" name="comensales" id="comensales" min="1"><br>
+			<label class="busqueda" for="autor">Autor:</label> <input type="text" name="autor" id="autor"><br>
 				<input type="submit" value="Buscar" id="buscar">
+           </div>
+		   <article>
+			<figure id="0">
+			<a href="receta.html"><img src="../Foto/sushi.jpeg" alt="Ramen" id="Ramen"></a> <br>
+			
+              <h4>Nombre: <b>Ramen</b></h4> 
+              Autor: <a href="buscar.html">Tetsuya Nakamura</a><br>
+              Fecha de publicaci&oacute;n: <data value="2018-2-2">2 de febrero de 2018</data><br>
+              Votos +:<br>
+              Votos -:<br>
+              Comentarios:<br>
+			  </figure>
+          </article>
+          <article>
+            <figure id="1">
+           <a href="receta.html"><img src="../Foto/sushi.jpeg" alt="Sushi" id="Sushi"></a> <br>
+               <h4>Nombre: <b>Ramen</b></h4> 
+              Autor:<a href="buscar.html"><b>Julio Verne</b></a> <br>
+              Fecha de publicaci&oacute;n: <data value="2018-2-2"> 2 de febrero de 2018</data><br>
+              Votos +:<br>
+              Votos -:<br>
+              Comentarios:<br>
+            </figure>
+          </article>
+          <article>
+            <figure id="2">
+            <a href="receta.html"><img src="../Foto/sushi.jpeg" alt="Lasaña" id="Lasaña"></a> <br>
+               <h4>Nombre: <b>Ramen</b></h4> 
+              Autor: <a href="buscar.html"><b>John Wick </b></a><br>
+              Fecha de publicaci&oacute;n: <data value="2018-2-2"> 2 de febrero de 2018</data><br>
+              Votos +:<br>
+              Votos -:<br>
+              Comentarios:<br>
+            </figure>
+          </article>
+          <article>
+            <figure id="3">
+            <a href="receta.html"><img src="../Foto/sushi.jpeg" alt="Pizza" id="Pizza"></a> <br>
+               <h4>Nombre: <b>Ramen</b></h4> 
+              Autor: <a href="buscar.html"><b>Fernandini Pirelli</b></a><br>
+              Fecha de publicaci&oacute;n: <data value="2018-2-2"> 2 de febrero de 2018</data><br>
+              Votos +:<br>
+              Votos -:<br>
+              Comentarios:<br>
+            </figure>
+          </article>
+          <article>
+            <figure id="4">
+            <a href="receta.html"><img src="../Foto/sushi.jpeg" alt="Paella" id="Paella"></a> <br>
+               <h4>Nombre: <b>Ramen</b></h4>
+              Autor: <a href="buscar.html"><b>Nacho Vidal</b></a><br>
+              Fecha de publicaci&oacute;n: <data value="2018-2-2"> 2 de febrero de 2018</data><br>
+              Votos +:<br>
+              Votos -:<br>
+              Comentarios:<br>
+            </figure>
+          </article>
+          <article>
+            <figure id="5">
+            <a href="receta.html"><img src="../Foto/sushi.jpeg" alt="Pasta" id="Pasta"></a> <br>
+               <h4>Nombre: <b>Ramen</b></h4>
+              Autor: <a href="buscar.html"><b>Pirelli Antoni</b></a><br>
+              Fecha de publicaci&oacute;n: <data value="2018-2-2"> 2 de febrero de 2018</data><br>
+              Votos +:<br>
+              Votos -:<br>
+              Comentarios:<br>
+            </figure>
+          </article>
 		</form>
 		</main>
       	<footer>
-        <nav>
-          <a>&copy;</a>
-          <a><time datetime="2018">2018</a>
-          <a>Contacto</a>
-        </nav>
-
+          &copy;
+          2018
+          <a href="acerca.html">Contacto</a>
       </footer>
 
 

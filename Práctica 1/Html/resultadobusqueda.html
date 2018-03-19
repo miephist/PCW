@@ -4,19 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Recetas Cocina</title>
+	<link rel="stylesheet" href="../CSS/Principal.css">
   </head>
   <body>
       <header>
 		<a href="index.html"><img src="../Foto/images.jpg" alt="Logo"></a>
         <h1><b>¡Yummy,Yummy!</b></h1>
         <h2>Tu sitio de recetas f&aacute;ciles y deliciosas</h2>
-          <nav>
-            <a href="index.html">Inicio</a>
-            <a href="buscar.html">Buscar</a>
-            <a href="login.html">Login</a>
-            <a href="registro.html">Registro</a>
-            <a href="index.html">Logout</a>
-            <a href="nueva-receta.html">Nueva Receta</a>
+         <nav class="menu">
+			<input type="checkbox"/>
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu">
+            <a href="index.html"><li>Inicio </li></a>|
+            <a href="buscar.html"><li>Buscar </li></a>|
+            <a href="login.html"><li>Login </li></a>|
+            <a href="registro.html"><li>Registro </li></a>|
+            <a href="index.html"><li>Logout </li></a>|
+            <a href="nueva-receta.html"><li>Nueva Receta</li></a>
+			</ul>
           </nav>
     	</header>
    		<main>
@@ -107,7 +114,7 @@
         <nav>
           <a>&copy;</a>
           <a><time datetime="2018">2018</a>
-          <a>Contacto</a>
+          <a href="acerca.html">Contacto</a>
         </nav>
 
       </footer>
