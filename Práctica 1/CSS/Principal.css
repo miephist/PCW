@@ -77,10 +77,17 @@ div.form2{
 	text-align: center;
 	width:80%;
 }
+button.boton:hover{
+	background:red;
+}
+#holi{
+	background:red;
+}
 /*Pongo aqui navegador*/
 input[type="checkbox"]{
 	display: none;
 }
+
 nav[class="menu"]{	
 	
 	padding: 1em;
