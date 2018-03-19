@@ -77,7 +77,6 @@ div.form2{
 	text-align: center;
 	width:80%;
 }
-
 /*Pongo aqui navegador*/
 input[type="checkbox"]{
 	display: none;
@@ -167,13 +166,47 @@ input.busc{
 	position: relative;
 	margin-left: 1em;
 }
+nav.menu2{
+	display: none;
+}
 /*TABLET*/
 @media (max-width: 768px){
-
+	nav.menu{
+		display:none;
+	}
+	nav.menu2{
+		display:block;
+	}
+	input[type="checkbox"]{
+	display: none;
+}
+nav[class="menu2"]{	
+	
+	padding: 1em;
+	text-align: center;
+	overflow: hidden;
+	
+}
+nav[class="menu2"]>div>ul{
+	list-style: none;
+	display: flex;
+	margin-top:-0.7em;
+	text-align: center;
+		justify-content: center;
+}
+nav[class="menu2"]>div>ul>li:hover{
+	transistion:all 0.4s;
+}
 }
 /*Movil*/
 
 @media (max-width: 481px){
+	nav.menu{
+		display:inline-flex;
+	}
+	nav.menu2{
+		display:none;
+	}
 	input[type="checkbox"]{
 		display: block;
 	}
@@ -204,7 +237,7 @@ input.busc{
 		margin-bottom: 5px;
 		position: relative;
   
-		background: #cdcdcd;
+		background: #000000;
 		border-radius: 3px;
   
 		z-index: 1;
@@ -235,11 +268,11 @@ input.busc{
 	}
 	#menu{
 		position: relative;
-		margin: -9em 0 0 -2em;
-		padding: 1em;
+		margin: -2em 0 0 -2em;
+		padding: 2em;
   
 		display:block;
-		background: black;
+		background: white;
 		list-style-type: none;
 		-webkit-font-smoothing: antialiased;
 		/* to stop flickering of text in safari */

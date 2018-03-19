@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Recetas Cocina</title>
 	<link rel="stylesheet" href="../CSS/Principal.css">
@@ -18,18 +19,34 @@
 			<span></span>
 			<span></span>
 			<ul id="menu">
-            <a href="index.html"><li>Inicio </li></a>|
-            <a href="buscar.html"><li>Buscar </li></a>|
-            <a href="login.html"><li>Login </li></a>|
-            <a href="registro.html"><li>Registro </li></a>|
-            <a href="index.html"><li>Logout </li></a>|
-            <a href="nueva-receta.html"><li>Nueva Receta</li></a>
+            <a class="iconicos" href="index.html"><li>Inicio </li></a>|
+            <a class="iconicos" href="buscar.html"><li>Buscar </li></a>|
+            <a class="iconicos" href="login.html"><li>Login </li></a>|
+            <a class="iconicos" href="registro.html"><li>Registro </li></a>|
+            <a class="iconicos"href="index.html"><li>Logout </li></a>|
+            <a class="iconicos" href="nueva-receta.html"><li>Nueva Receta</li></a>
+			</ul>
+			</div>
+          </nav>
+		    <nav class="menu2">
+		  <div id="menutoggle2">
+			<input type="checkbox"/>
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu2">
+            <a class="iconicos" href="index.html"><li><i id="icono" class="material-icons">home</i></a></li>|
+            <a class="iconicos" href="buscar.html"><li><i id="icono" class="material-icons">search</i></a></li>|
+            <a class="iconicos" href="login.html"><li><i id="icono" class="material-icons">	account_box</i></li></a>|
+            <a class="iconicos" href="registro.html"><li><i id="icono" class="material-icons">perm_identity</i></li></a>|
+            <a class="iconicos"href="index.html"><li><i id="icono" class="material-icons">account_circle</i></li></a>|
+            <a class="iconicos" href="nueva-receta.html"><li><i id="icono" class="material-icons">note_add</i></li></a>
 			</ul>
 			</div>
           </nav>
       </header>
       <main>
-	  <input type="search" name="buscador" placeholder="Buscador">
+	  <input class="busc" type="search" name="buscador" placeholder="Buscador">
 			<form action="nueva-receta.html" class="formnuevareceta" method="POST">
 			<label>Nombre:</label> <input type="text" name="nombre" id="nombre"><br>
 			<label>Elaboración:</label> <textarea name="elaboracion" id="elaboracion" rows="4" cols="50"></textarea><br>
@@ -50,6 +67,7 @@
 			<label>Nº de comensales:</label> <input type="number" name="comensales" id="comensales" min="1"><br>
 			<label>Autor:</label> <input type="text" name="autor" id="autor"><br>
 				<label for="anadirfoto">Añadir foto</label><input type="file" name="anadirfoto" id="anadirfoto"><br>
+				<input type="button" value="Aceptar" id="Aceptar"><br>
             <figure id="0">
             <img src="../Foto/sushi.jpeg" alt="foto"><br>
             <label>Descripcion:</label> <textarea name="descripcion1" id="descripcion1" rows="4" cols="50"></textarea><br>
