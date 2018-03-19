@@ -24,6 +24,9 @@ body{
 	background-color: #91CDF3;
 	overflow-y:scroll;
 }
+input:hover{
+	background: #FF5733;
+}
 footer{
 	width:100%;
 	margin-top:1em;
@@ -157,11 +160,19 @@ p{
 }
 input.busc{
 	position : relative;
-	margin-left: 50px
-	
+	float: right;
+	margin-top:2em;
+}
+#orden{
+	position: relative;
+	margin-left: 1em;
 }
 /*TABLET*/
+@media (max-width: 768px){
+
+}
 /*Movil*/
+
 @media (max-width: 481px){
 	input[type="checkbox"]{
 		display: block;

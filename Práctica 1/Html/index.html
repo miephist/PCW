@@ -19,12 +19,12 @@
 			<span></span>
 			<span></span>
 			<ul id="menu">
-            <a href="index.html"><li>Inicio </li></a>|
-            <a href="buscar.html"><li>Buscar </li></a>|
-            <a href="login.html"><li>Login </li></a>|
-            <a href="registro.html"><li>Registro </li></a>|
-            <a href="index.html"><li>Logout </li></a>|
-            <a href="nueva-receta.html"><li>Nueva Receta</li></a>
+            <a href="index.html"><i class="material-icons">home</i><li>Inicio </li></a>|
+            <a href="buscar.html"><i class="material-icons">search</i><li>Buscar </li></a>|
+            <a href="login.html"><i class="material-icons">	account_box</i><li>Login </li></a>|
+            <a href="registro.html"><i class="material-icons">perm_identity</i><li>Registro </li></a>|
+            <a href="index.html"><i class="material-icons">account_circle</i><li>Logout </li></a>|
+            <a href="nueva-receta.html"><i class="material-icons">note_add</i><li>Nueva Receta</li></a>
 			</ul>
 			</div>
           </nav>
@@ -37,7 +37,13 @@
 		  
 				https://codepen.io/imprakash/pen/GgNMXO  Esto es el slide
 		  -->
-           <article class="imagen">
+           <label class="orden">Ordenar:</label><select class="orden" id="orden" name="orden" >
+						<option value="FechaAsc">Por fecha Asc</option>
+						<option value="FechaDesc">Por fecha Desc</option>
+						<option value="ValorAsc">Por valoracion Asc</option>
+						<option value="ValorDesc">Por valoracion Desc</option>
+						</select><br>
+		   <article class="imagen">
 			<figure id="0">
 			<a href="receta.html"><img src="../Foto/sushi.jpeg" alt="Ramen" id="Ramen"></a> <br>
 			
@@ -114,6 +120,7 @@
           &copy;
           2018
           <a href="acerca.html">Contacto</a>
+		  <a href="index.html">Subir</a>
       </nav>
 	  </footer>
 
