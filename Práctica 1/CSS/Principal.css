@@ -3,7 +3,7 @@
 	font-family: 'Lato', sans-serif;
 }
 a:link {
-    color: white;
+    color: black;
 	text-decoration: none;
 }
 a:visited {
@@ -27,15 +27,35 @@ body{
 input:hover{
 	background: #FF5733;
 }
+form.login{
+	margin:auto;
+	margin-top: 3em;
+}
+button.loged{
+	border-color: black;
+}
+h2.Registro{
+	margin:auto;
+	margin-left: 10em;
+	margin-top:2em;
+}
+form.registro{
+	margin:auto;
+}
+form.formbusqueda{
+	margin:auto;
+	margin-top:3em;
+}
+
 footer{
 	width:100%;
 	margin-top:1em;
 	padding:0px;
-
+	
 	display:inline-flex;
 	flex-direction:row;
 	justify-content:space-around;
-	align-items:space-around;
+
 }
 body>header>nav{
 	text-align: center;
@@ -52,8 +72,21 @@ body>header>nav{
 		margin:.1em 0;
 		display:block;
 		}
-article{
+/*article{
 text-align: center;
+}*/
+fieldset.comentarios{
+	width:70em;	
+}
+textarea.area{
+	width:70em;
+}
+fieldset.comentar{
+	width:70em;
+}
+input.nudes{
+	margin:auto;
+	margin-left:22em;
 }
 .imagen{
 	float:left;	
@@ -76,6 +109,14 @@ div.form2{
 	margin:auto;
 	text-align: center;
 	width:80%;
+}
+ul.recetica{
+	list-style: none;
+}
+article.detfoto{
+		margin-left:2em;
+		
+		
 }
 button.boton:hover{
 	background:red;
@@ -300,6 +341,7 @@ nav[class="menu2"]>div>ul>li:hover{
 		position:center;
 		display:inline-block;
 		vertical-align: middle;
+	}	
 	}	
 	header .leftheader{
 		width:25%;

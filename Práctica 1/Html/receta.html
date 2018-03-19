@@ -19,12 +19,12 @@
 			<span></span>
 			<span></span>
 			<ul id="menu">
-            <a class="iconicos" href="index.html"><li>Inicio </li></a>|
-            <a class="iconicos" href="buscar.html"><li>Buscar </li></a>|
-            <a class="iconicos" href="login.html"><li>Login </li></a>|
-            <a class="iconicos" href="registro.html"><li>Registro </li></a>|
-            <a class="iconicos"href="index.html"><li>Logout </li></a>|
-            <a class="iconicos" href="nueva-receta.html"><li>Nueva Receta</li></a>
+            <li><a class="iconicos" href="index.html">Inicio </a>|</li> 
+            <li><a class="iconicos" href="buscar.html">Buscar </a>|</li>
+            <li><a class="iconicos" href="login.html">Login </a>|</li>
+            <li><a class="iconicos" href="registro.html">Registro </a>|</li>
+            <li><a class="iconicos" href="index.html">Logout </a>|</li>
+            <li><a class="iconicos" href="nueva-receta.html">Nueva Receta</a></li>
 			</ul>
 			</div>
           </nav>
@@ -35,12 +35,12 @@
 			<span></span>
 			<span></span>
 			<ul id="menu2">
-            <a class="iconicos" href="index.html"><li><i id="icono" class="material-icons">home</i></a></li>|
-            <a class="iconicos" href="buscar.html"><li><i id="icono" class="material-icons">search</i></a></li>|
-            <a class="iconicos" href="login.html"><li><i id="icono" class="material-icons">	account_box</i></li></a>|
-            <a class="iconicos" href="registro.html"><li><i id="icono" class="material-icons">perm_identity</i></li></a>|
-            <a class="iconicos"href="index.html"><li><i id="icono" class="material-icons">account_circle</i></li></a>|
-            <a class="iconicos" href="nueva-receta.html"><li><i id="icono" class="material-icons">note_add</i></li></a>
+            <li><a class="iconicos" href="index.html"><i id="icono1" class="material-icons">home</i></a></li>
+            <li><a class="iconicos" href="buscar.html"><i id="icono2" class="material-icons">search</i></a></li>
+            <li><a class="iconicos" href="login.html"><i id="icono3" class="material-icons">account_box</i></a></li>
+            <li><a class="iconicos" href="registro.html"><i id="icono4" class="material-icons">perm_identity</i></a></li>
+            <li><a class="iconicos" href="index.html"><i id="icono5" class="material-icons">account_circle</i></a></li>
+            <li><a class="iconicos" href="nueva-receta.html"><i id="icono6" class="material-icons">note_add</i></a></li>
 			</ul>
 			</div>
           </nav>
@@ -49,13 +49,13 @@
 	  <input class="busc" type="search" name="buscador" placeholder="Buscador">
 		<article class="detfoto">
 				<figure>
-				<a> <img src="../Foto/ramen.jpg" alt="Detalle de la foto"></a>
+				<a> <img src="../Foto/sushi.jpeg" alt="Detalle de la foto"></a>
 				<figcaption><button onclick="receta.html">Anterior</button>
 				<button onclick="receta.html"> Siguiente</button></figcaption>
 				
 				</figure>
-			Nombre:<b>Ramen</b><br>
-			Ingredientes: <ul style="list-style-type:square" id="ingredientes">
+		     <h4>Nombre:<a href="receta.html"> <b>Ramen</b></a></h4> 
+			Ingredientes: <ul class="recetica" style="list-style-type:square" id="ingredientes">
 				<li>1 zanahoria</li>
 				<li>200gr de espinacas</li>
 				<li>4 dientes de ajo</li>
@@ -77,33 +77,41 @@
 			N&uacute;mero de comensales:<b>  4</b><br> 
 			N&uacute;mero de votos positivos: <b>999</b><br>
 			N&uacute;mero de votos negativos: <b>30</b><br>
-			N&uacute;mero de comentarios de los usuarios: <b>30</b><br>
-			N&uacute;mero de comentarios de los autores: <b>30</b><br><!-- Meter enlace en la misma pagina -->
+			N&uacute;mero de comentarios de los usuarios: <a href="receta.html"><b>30</b></a><br>
+			N&uacute;mero de comentarios de los autores: <a href="receta.html"><b>30</b></a><br><!-- Meter enlace en la misma pagina -->
 			Autor:<input type="text" name="autor" id="autor"><a href="buscar.html"><b>  Tetsuya Nakamura</b></a><br>
 			<form>
-			<fieldset>
+			<fieldset class="comentarios">
 				<legend>Zona comentarios</legend> <!-- ordenadlo de mas reciente a mas viejo -->
-				Usuario:<input type="text" name="autorcoment" id="autorcoment"><a href="perfil.html"><b>  Jose ignacio Nadal</b></a><br>
+				Usuario:<a href="perfil.html"><b>  Jose ignacio Nadal</b></a><br>
 				Fecha: <data value="2018-2-2"> 2 de febrero de 2018</data><br>
-				Titulo:<input type="text" name="title" id="title"><b> Obra maestra </b> <br>
-				Texto:<input type="text" name="texto" id="text"><b> Todo riquisimo </b>
+				Titulo:<b> Obra maestra </b> <br>
+				Texto:<b> Todo riquisimo </b>
 			</fieldset>
-			<fieldset>
+			<fieldset class="comentar">
 				<legend><b> Valoraci&oacute;n Usuario conectado </b></legend>
 				<button type="button"> Me gusta</button>
 				<button type="button"> No me gusta</button>
 				<label for="comentario">Titulo del comentario: </label><input type="text" name="comenterio" id="comentario" required><br> 
-				<textarea rows="7" cols="80" maxlength="50" required></textarea>
-				<input type="submit" value="sedun dnes">
+				<textarea class="area" rows="7" cols="80" maxlength="100" required></textarea>
+				<input class="nudes" type="submit" value="sedun dnes">
 			</fieldset>
 			</form>
 		</article>
       </main>
       <footer>
+	  <nav class="footer">
+	  <button class="boton" type="button" onclick=""> Primera P&aacute;gina</button>
+	  <button class="boton" id="holi" type="button" onclick="">  1</button>
+	  <button class="boton" type="button" onclick=""> 2</button>
+	  <button class="boton" type="button" onclick="">  3</button>
+	  <button class="boton" type="button" onclick="">  &Uacute;ltima P&aacute;gina</button><br>
           &copy;
-          2018
+          <time datetime="2018" >2018</time>
           <a href="acerca.html">Contacto</a>
 		  <a href="receta.html">Subir</a>
+      </nav>
+	  </footer>
   </body>
 </html>
 
